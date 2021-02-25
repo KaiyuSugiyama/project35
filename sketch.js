@@ -5,17 +5,18 @@ var backgroundImage;
 
 
 function preload() {
-
+  balloon = loadImage("Hot Air Ballon-02.png")
+  backgroundImage = loadImage("Hot Air Ballon-01.png")
 }
 function setup() {
   database = firebase.database();
   createCanvas(500,500);
-  balloon = loadImage("images/Hot Air Ballon-02.png")
-  balloonSprite = createSprite("300,300,50,50")
+  
+  balloonSprite = createSprite(300,300,50,50)
   balloonSprite.addImage(balloon);
   //balloonSprite.x = 500;
   //balloon.y = 400;
-  backgroundImage = loadImage("images/Hot Air Ballon-01.png")
+  
 
 
   //var balloonPosition = database.ref("balloon/position")
